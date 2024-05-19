@@ -7,6 +7,8 @@ import { FaFacebookF, FaLinkedin, FaPinterest } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { usePathname } from "next/navigation";
 import { useMemo } from "react";
+import PROFILE1 from '../public/Profile-v1.jpeg'
+import PROFILE2 from '../public/logo.png'
 export const ICONS = {
     heart: CiHeart,
     user: LuUserCircle
@@ -99,32 +101,36 @@ export const TEAMS = [
         id: 1,
         name: 'Chenter Phai',
         username: 'chenterphai4',
-        profile: '',
+        profile: PROFILE1,
         description: 'Frontend developer and UI/UX enthusiast. Join me on this coding adventure!',
-        tag: 'FrontendWithZoey'
+        tag: 'FrontendWithZoey',
+        position: 'Web Developer'
     },
     {
         id: 2,
         name: 'Sony Sim',
         username: 'sonysim064',
-        profile: '',
+        profile: PROFILE2,
         description: 'Frontend developer and UI/UX enthusiast. Join me on this coding adventure!',
-        tag: 'POS&ManagementSystem'
+        tag: 'POS&ManagementSystem',
+        position: 'Web Designer'
     },
     {
         id: 3,
         name: 'Chenter Phai',
         username: 'chenterphai4',
-        profile: '',
+        profile: PROFILE1,
         description: 'Frontend developer and UI/UX enthusiast. Join me on this coding adventure!',
-        tag: '#FrontendWithZoey'
+        tag: '#FrontendWithZoey',
+        position: 'Mobile Developer'
     },
     {
         id: 4,
         name: 'Chenter Phai',
         username: 'chenterphai4',
-        profile: '',
+        profile: PROFILE1,
         description: 'Frontend developer and UI/UX enthusiast. Join me on this coding adventure!',
-        tag: '#FrontendWithZoey'
+        tag: '#FrontendWithZoey',
+        position: 'Back-end Developer'
     },
 ]
