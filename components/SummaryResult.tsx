@@ -5,7 +5,7 @@ import { Link } from '@nextui-org/react'
 export default function SummaryResultSection() {
     return (
         <div className='p-5 py-20'>
-            <div className='grid grid-cols-4 gap-5'>
+            <div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5'>
                 <div className='flex flex-col items-start justify-center'>
                     <p className='text-2xl'>Our numbers tell more about us</p>
                     <Link

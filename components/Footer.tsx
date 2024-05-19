@@ -32,7 +32,7 @@ export default function FooterSection() {
     return (
         <div className='bg-default-50'>
             <div className='p-10 container mx-auto'>
-                <div className='grid grid-cols-4 gap-10'>
+                <div className='grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-10'>
 
                     <div>
                         <p className='text-2xl font-medium text-default-600 mb-8'>About CT-BOX</p>

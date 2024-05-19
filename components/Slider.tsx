@@ -18,7 +18,7 @@ export default function SliderComponent() {
         loop: true
     }
     return (
-        <div>
+        <div className='py-5'>
             <Slider {...settings}>
                 {SLIDE_DATA?.map((item) => (
                     <div

@@ -1,4 +1,5 @@
 import HeroSection from "@/components/Hero";
+import MemberSection from "@/components/MemberSection";
 import OurTeamSection from "@/components/OurTeam";
 import ServiceComponent from "@/components/Service";
 import SummaryResultSection from "@/components/SummaryResult";
@@ -12,6 +13,7 @@ export default function Home() {
       <HeroSection />
       <SummaryResultSection />
       <ServiceComponent />
+      {/* <MemberSection /> */}
       <OurTeamSection />
     </main>
   );

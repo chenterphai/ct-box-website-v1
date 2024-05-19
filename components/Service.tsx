@@ -4,10 +4,10 @@ import CardServiceComponent from './CardService'
 export default function ServiceComponent() {
     return (
         <div className='p-5'>
-            <div className='p-20 bg-primary rounded-3xl'>
-                <div className='grid grid-cols-2 gap-4'>
+            <div className='lg:p-20 p-8 bg-primary rounded-3xl'>
+                <div className='grid lg:grid-cols-2 grid-cols-1 gap-4'>
                     <div className='flex flex-col space-y-3'>
-                        <p className='text-3xl'>Our Service</p>
+                        <p className='text-3xl'>Popular Service</p>
                         <p className='text-default-600 font-light pr-10'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint pariatur eveniet laboriosam unde voluptatum facere commodi est aspernatur delectus consectetur?</p>
                         <div>
                             <Button color="default" variant="flat">
@@ -15,7 +15,7 @@ export default function ServiceComponent() {
                             </Button>
                         </div>
                     </div>
-                    <div className='grid grid-cols-2 gap-5'>
+                    <div className='grid md:grid-cols-2 grid-cols-1 gap-5'>
                         <CardServiceComponent
                             title='Mobile Development'
                             subtitle='Build both iOS and Android'

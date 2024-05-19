@@ -3,9 +3,9 @@ import React, { useMemo } from 'react'
 import { Image, Badge } from '@nextui-org/react'
 import { usePathname } from 'next/navigation'
 import Link from 'next/link'
-import { twMerge } from 'tailwind-merge'
-import { CiHeart } from "react-icons/ci";
 import { ICONS } from '../constants/Data'
+import { ThemeSwitcher } from './ThemeSwitcher'
+import { HiMenuAlt2 } from 'react-icons/hi'
 export default function NavigationBar() {
     const pathname = usePathname()
     const route = useMemo(() => [
@@ -60,9 +60,21 @@ export default function NavigationBar() {
     ], [{}])
     return (
         <div
-            className='flex items-center justify-center py-5 sticky top-0 bg-background z-50'
+            className='flex items-center lg:justify-center justify-between lg:px-0 md:px-24 px-16 py-5 sticky top-0 bg-background/40 backdrop-blur z-50'
         >
-            <div className='flex items-center justify-center space-x-5'>
+            <div className='lg:hidden flex items-center space-x-1'>
+                <Image
+                    src='./logo.png'
+                    width={500}
+                    height={500}
+                    className='w-6 h-6'
+                    alt='CT-BOX Logo'
+                />
+                <div className='p-1.5 rounded-full hover:bg-[#ffffff30] cursor-pointer transition-all duration-250 ease-linear'>
+                    <HiMenuAlt2 className='' />
+                </div>
+            </div>
+            <div className='lg:flex items-center justify-center space-x-5 hidden'>
                 <div>
                     <Image
                         src='./logo.png'
@@ -84,12 +96,15 @@ export default function NavigationBar() {
                     ))}
                 </nav>
                 <div className='flex items-center space-x-2'>
-                    <Badge content='0' size='sm' color='primary'>
+                    <Badge content='0' size='md' color='primary'>
                         <button title='Wish'><ICONS.heart size={24} /></button>
                     </Badge>
                     <button title='Account'><ICONS.user size={20} className='opacity-70' /></button>
                 </div>
             </div>
+            {/* <div className='absolute right-10'>
+                <ThemeSwitcher />
+            </div> */}
         </div>
     )
 }
