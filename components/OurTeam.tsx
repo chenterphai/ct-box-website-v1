@@ -6,7 +6,7 @@ export default function OurTeamSection() {
     return (
         <div className='p-5 my-10'>
             <div>
-                <p className='text-2xl font-medium text-default-600 text-center pb-10'>Our Team</p>
+                <p className='text-xl uppercase font-medium text-default-600 text-center pb-10'>Our Team</p>
             </div>
             <div
                 className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10'
