@@ -8,6 +8,7 @@ export default function HeroSection() {
         >
             <div className='p-5 flex justify-center'>
                 <div className='flex flex-col items-start justify-center space-y-5'>
+                    <p className='text-base font-semibold text-default-700'><span>🏕</span> CT-BOX</p>
                     <h1 className='text-5xl'>Make Your Business to Be Better</h1>
                     <p className='text-sm text-default-600 font-light'><span className='font-bold'>CT-BOX</span> can help you with modern technology <Link
                         isExternal
