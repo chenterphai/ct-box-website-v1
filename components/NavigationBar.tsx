@@ -31,9 +31,9 @@ export default function NavigationBar() {
         },
         {
             id: 4,
-            label: 'Product',
-            active: pathname === '/product',
-            href: '/product'
+            label: 'Project',
+            active: pathname === '/our-project',
+            href: '/our-project'
         },
         {
             id: 5,

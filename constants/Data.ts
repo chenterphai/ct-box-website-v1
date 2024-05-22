@@ -76,8 +76,8 @@ export const route = [
     },
     {
         id: 4,
-        label: 'Product',
-        href: '/product'
+        label: 'Project',
+        href: '/our-project'
     },
     {
         id: 5,
