@@ -31,15 +31,15 @@ export default function NavigationBar() {
         },
         {
             id: 4,
-            label: 'Project',
+            label: 'Project & Client',
             active: pathname === '/our-project',
             href: '/our-project'
         },
         {
             id: 5,
-            label: 'Client',
-            active: pathname === '/client',
-            href: '/client'
+            label: 'Apps',
+            active: pathname === '/applications',
+            href: '/applications'
         },
         {
             id: 6,

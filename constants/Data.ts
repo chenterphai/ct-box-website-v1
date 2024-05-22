@@ -5,10 +5,9 @@ import website from '../public/website.svg';
 import posms from '../public/pos.svg';
 import { FaFacebookF, FaLinkedin, FaPinterest } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { usePathname } from "next/navigation";
-import { useMemo } from "react";
 import PROFILE1 from '../public/Profile-v1.jpeg'
 import PROFILE2 from '../public/logo.png'
+import thumbnail from '../public/thumbnail.png'
 export const ICONS = {
     heart: CiHeart,
     user: LuUserCircle
@@ -76,13 +75,13 @@ export const route = [
     },
     {
         id: 4,
-        label: 'Project',
+        label: 'Project & Client',
         href: '/our-project'
     },
     {
         id: 5,
-        label: 'Client',
-        href: '/client'
+        label: 'Apps',
+        href: '/applications'
     },
     {
         id: 6,
@@ -133,4 +132,36 @@ export const TEAMS = [
         tag: '#FrontendWithZoey',
         position: 'Back-end Developer'
     },
+]
+
+export const PROJECTS = [
+    {
+        id: 1,
+        title: 'NYT Technology Website',
+        subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur beatae quod animi odit eaque voluptatem id iste assumenda, quia eum.',
+        thumbnail: thumbnail,
+        tag: 'Web Development'
+    },
+    {
+        id: 2,
+        title: 'NYT Technology Website',
+        subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur beatae quod animi odit eaque voluptatem id iste assumenda, quia eum.',
+        thumbnail: thumbnail,
+        tag: 'Mobile Application'
+    },
+    {
+        id: 3,
+        title: 'NYT Technology Website',
+        subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur beatae quod animi odit eaque voluptatem id iste assumenda, quia eum.',
+        thumbnail: thumbnail,
+        tag: 'Web Design'
+    },
+    {
+        id: 4,
+        title: 'NYT Technology Website',
+        subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur beatae quod animi odit eaque voluptatem id iste assumenda, quia eum.',
+        thumbnail: thumbnail,
+        tag: 'Web Development'
+    },
+
 ]
