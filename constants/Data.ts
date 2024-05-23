@@ -8,6 +8,8 @@ import { FaXTwitter } from "react-icons/fa6";
 import PROFILE1 from '../public/Profile-v1.jpeg'
 import PROFILE2 from '../public/logo.png'
 import thumbnail from '../public/thumbnail.png'
+import { SiNintendogamecube } from "react-icons/si";
+import { BiCubeAlt } from "react-icons/bi";
 export const ICONS = {
     heart: CiHeart,
     user: LuUserCircle
@@ -164,4 +166,21 @@ export const PROJECTS = [
         tag: 'Web Development'
     },
 
+]
+
+export const MEMBERS_DATA = [
+    {
+        id: 1,
+        title: 'TBOX-LEARNING',
+        subtitle: 'Education',
+        logo: SiNintendogamecube,
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur magni voluptatem exercitationem'
+    },
+    {
+        id: 2,
+        title: 'CBOX-AID',
+        subtitle: 'Products',
+        logo: BiCubeAlt,
+        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur magni voluptatem exercitationem'
+    }
 ]

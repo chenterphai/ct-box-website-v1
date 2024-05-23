@@ -10,7 +10,7 @@ import { VscGithubProject } from "react-icons/vsc";
 const ProjectPage = () => {
     return (
         <>
-            <div className='container mx-auto px-10 pb-20'>
+            <div className='container mx-auto px-10 pb-20 mt-16'>
                 <Header description='Lorem vdffd vifv idfid svnodfv ksvdo osdov nvs' className='mb-20' />
                 <div className='flex items-center space-x-3 mb-5'>
                     <div className='bg-default/50 p-2 rounded-xl'><VscGithubProject size={18} className='text-primary' /></div>

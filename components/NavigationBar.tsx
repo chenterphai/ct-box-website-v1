@@ -62,7 +62,7 @@ export default function NavigationBar() {
     ], [{}])
     return (
         <div
-            className='flex items-center space-x-4 lg:justify-center justify-between lg:px-0 md:px-24 px-16 py-5 sticky top-0 bg-background/40 backdrop-blur z-50'
+            className='flex items-center space-x-4 lg:justify-center justify-between lg:px-0 md:px-24 px-16 py-5 fixed w-full top-0 bg-background/40 backdrop-blur z-50'
         >
             <div className='lg:hidden flex items-center space-x-1'>
                 <Image

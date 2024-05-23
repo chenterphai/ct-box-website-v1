@@ -10,7 +10,7 @@ export default function Service() {
     const isInView = useInView(ref, { once: true })
     return (
         <>
-            <div className='container mx-auto px-10'>
+            <div className='container mx-auto px-10 mt-16'>
                 <Header
                     description='Find your need in CT-BOX'
                     className='mb-10'

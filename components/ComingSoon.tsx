@@ -6,7 +6,7 @@ function ComingSoon() {
             <MdOutlineUpcoming size={50} color='#999' />
             <p
                 className='text-default-300 font-semibold text-xl'
-            > </p>
+            >Coming Soon...</p>
         </div>
     )
 }

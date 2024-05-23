@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <>
 
-      <main className="flex flex-col container mx-auto p-5">
+      <main className="flex flex-col container mx-auto p-5 mt-16">
         {/* <ThemeSwitcher /> */}
         <HeroSection />
         <SummaryResultSection />
