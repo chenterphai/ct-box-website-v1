@@ -10,7 +10,6 @@ import { route } from '@/constants/Data';
 import { SiNintendogamecube } from "react-icons/si";
 import { BiCubeAlt } from "react-icons/bi";
 import Link from 'next/link';
-import { motion } from 'framer-motion'
 const ADDRESS = [
     {
         id: 1,
@@ -28,7 +27,7 @@ const ADDRESS = [
         icon: FaEnvelope
     }
 ]
-export default function FooterSection({ isVisible }: any) {
+export default function FooterSection() {
     const router = useRouter()
     return (
         <div className='bg-default-50'>

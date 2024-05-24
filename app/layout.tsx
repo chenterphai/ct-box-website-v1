@@ -6,8 +6,6 @@ import NavigationBar from "@/components/NavigationBar";
 import { Suspense } from "react";
 import Loading from "./loading";
 import FooterSection from "@/components/Footer";
-import ScrollProcess from "@/components/ScrollProcess";
-import PhoneTabBar from "@/components/PhoneTabBar";
 
 
 const inter = Poppins({ subsets: ["latin"], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] });
@@ -27,12 +25,10 @@ export default function RootLayout({
       <body className={inter.className}>
         <Provider>
           <NavigationBar />
-          <ScrollProcess />
           <Suspense fallback={<Loading />}>
             {children}
-            <PhoneTabBar />
-            <FooterSection />
           </Suspense>
+          <FooterSection />
         </Provider>
       </body>
     </html>

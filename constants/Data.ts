@@ -5,11 +5,10 @@ import website from '../public/website.svg';
 import posms from '../public/pos.svg';
 import { FaFacebookF, FaLinkedin, FaPinterest } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import { usePathname } from "next/navigation";
+import { useMemo } from "react";
 import PROFILE1 from '../public/Profile-v1.jpeg'
 import PROFILE2 from '../public/logo.png'
-import thumbnail from '../public/thumbnail.png'
-import { SiNintendogamecube } from "react-icons/si";
-import { BiCubeAlt } from "react-icons/bi";
 export const ICONS = {
     heart: CiHeart,
     user: LuUserCircle
@@ -77,13 +76,13 @@ export const route = [
     },
     {
         id: 4,
-        label: 'Project & Client',
+        label: 'Project',
         href: '/our-project'
     },
     {
         id: 5,
-        label: 'Apps',
-        href: '/applications'
+        label: 'Client',
+        href: '/client'
     },
     {
         id: 6,
@@ -134,57 +133,4 @@ export const TEAMS = [
         tag: '#FrontendWithZoey',
         position: 'Back-end Developer'
     },
-]
-
-export const PROJECTS = [
-    {
-        id: 1,
-        title: 'NYT Technology Website',
-        subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur beatae quod animi odit eaque voluptatem id iste assumenda, quia eum.',
-        thumbnail: thumbnail,
-        tag: 'Web Development',
-        logo: 'https://nyt-website-v1.vercel.app/_next/image?url=https%3A%2F%2Fgcxsvuwjngrpqmekwgzc.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Ffiles%2Fimages%2FNYT_Logo_v1_transparent.png&w=640&q=75'
-    },
-    {
-        id: 2,
-        title: 'NYT Technology Website',
-        subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur beatae quod animi odit eaque voluptatem id iste assumenda, quia eum.',
-        thumbnail: thumbnail,
-        tag: 'Mobile Application',
-        logo: 'https://nyt-website-v1.vercel.app/_next/image?url=https%3A%2F%2Fgcxsvuwjngrpqmekwgzc.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Ffiles%2Fimages%2FNYT_Logo_v1_transparent.png&w=640&q=75'
-    },
-    {
-        id: 3,
-        title: 'NYT Technology Website',
-        subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur beatae quod animi odit eaque voluptatem id iste assumenda, quia eum.',
-        thumbnail: thumbnail,
-        tag: 'Web Design',
-        logo: 'https://nyt-website-v1.vercel.app/_next/image?url=https%3A%2F%2Fgcxsvuwjngrpqmekwgzc.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Ffiles%2Fimages%2FNYT_Logo_v1_transparent.png&w=640&q=75'
-    },
-    {
-        id: 4,
-        title: 'NYT Technology Website',
-        subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur beatae quod animi odit eaque voluptatem id iste assumenda, quia eum.',
-        thumbnail: thumbnail,
-        tag: 'Web Development',
-        logo: 'https://nyt-website-v1.vercel.app/_next/image?url=https%3A%2F%2Fgcxsvuwjngrpqmekwgzc.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Ffiles%2Fimages%2FNYT_Logo_v1_transparent.png&w=640&q=75'
-    },
-
-]
-
-export const MEMBERS_DATA = [
-    {
-        id: 1,
-        title: 'TBOX-LEARNING',
-        subtitle: 'Education',
-        logo: SiNintendogamecube,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur magni voluptatem exercitationem'
-    },
-    {
-        id: 2,
-        title: 'CBOX-AID',
-        subtitle: 'Products',
-        logo: BiCubeAlt,
-        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur magni voluptatem exercitationem'
-    }
 ]
