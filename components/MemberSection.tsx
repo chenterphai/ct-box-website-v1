@@ -43,7 +43,7 @@ export default function MemberSection() {
         arrows: false,
         speed: 5000,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 1,
         slidesToShow: 4,
         slidesToScroll: 1,
         cssEase: 'linear',
@@ -76,7 +76,7 @@ export default function MemberSection() {
     }
     return (
         <div className='p-5'>
-            <p className='text-center font-semibold text-xl uppercase text-default-600'>Our Member</p>
+            <p className='text-center font-semibold text-xl uppercase text-default-600 pb-10'>Our Member</p>
             <div className='my-10'>
                 <Slider {...settings}>
                     {members?.map((item) => (
