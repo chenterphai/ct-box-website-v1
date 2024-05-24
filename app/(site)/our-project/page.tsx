@@ -6,6 +6,7 @@ import Image from 'next/image'
 import MemberSection from '@/components/MemberSection'
 import Tag from '@/components/Tag'
 import { VscGithubProject } from "react-icons/vsc";
+import { motion } from 'framer-motion'
 
 const ProjectPage = () => {
     return (
@@ -20,7 +21,11 @@ const ProjectPage = () => {
                     {
                         PROJECTS.map((item) =>
                         (
-                            <div key={item.id} className='flex flex-col space-y-1 bg-default/20  rounded-lg transition-all'>
+                            <motion.div
+                                initial={{ opacity: 0, scale: 0.95 }}
+                                animate={{ opacity: 1, scale: 1 }}
+                                transition={{ duration: 0.6 }}
+                                key={item.id} className='flex flex-col space-y-1 bg-default/20  rounded-lg transition-all'>
                                 {/* <div className='w-full overflow-hidden'> */}
                                 <Image
                                     src={item.thumbnail}
@@ -37,7 +42,7 @@ const ProjectPage = () => {
                                 <div className='pl-4 pb-8'>
                                     <Tag tag={item.tag} />
                                 </div>
-                            </div>
+                            </motion.div>
                         ))
                     }
                 </div>

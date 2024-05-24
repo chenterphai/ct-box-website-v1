@@ -1,12 +1,18 @@
+'use client'
 import Header from '@/components/Header'
 import React from 'react'
 import { MEMBERS_DATA, } from '@/constants/Data'
 import { FaFacebookF, FaTelegram, FaTwitter } from "react-icons/fa";
+import { motion } from 'framer-motion';
 export default function OurMember() {
 
     const MEMBER_CARD = ({ data }: any) => {
         return (
-            <div key={data.id} className='flex flex-col items-center justify-center bg-default-50 p-5 rounded-md space-y-3'>
+            <motion.div
+                initial={{ opacity: 0, scale: 0.8 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6 }}
+                key={data.id} className='flex flex-col items-center justify-center bg-default-50 p-5 rounded-md space-y-3'>
                 <div className='flex flex-col items-center justify-center space-y-2'>
                     <div className='bg-default-100 p-2 rounded-xl'>
                         <data.logo size={30} />
@@ -33,7 +39,7 @@ export default function OurMember() {
                         <FaTwitter size={16} className='group-hover:text-primary' />
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
         )
     }
