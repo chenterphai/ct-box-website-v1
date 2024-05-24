@@ -69,12 +69,9 @@ export default function NavigationBar() {
                     src='./logo.png'
                     width={500}
                     height={500}
-                    className='w-6 h-6'
+                    className='w-8 h-8'
                     alt='CT-BOX Logo'
                 />
-                <div className='p-1.5 rounded-full hover:bg-[#ffffff30] cursor-pointer transition-all duration-250 ease-linear'>
-                    <HiMenuAlt2 className='' />
-                </div>
             </div>
             <div className='lg:flex items-center justify-center space-x-5 hidden'>
                 <div>

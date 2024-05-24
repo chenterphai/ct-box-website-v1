@@ -13,9 +13,9 @@ const PhoneTabBar = () => {
     const router = useRouter()
     return (
         <div className='lg:hidden fixed bottom-4 flex items-center justify-center w-screen z-50'>
-            <div className='container mx-auto px-12'>
+            <div className='container mx-auto px-5'>
                 <div
-                    className='bg-default-100 p-4 rounded-2xl shadow-sm shadow-active/50'
+                    className='bg-default-100 p-4 rounded-full shadow-sm shadow-active/50'
                 >
                     <div className='grid grid-cols-5'>
 
@@ -57,7 +57,7 @@ const PhoneTabBar = () => {
                             <div>
                                 <Dropdown>
                                     <DropdownTrigger>
-                                        <Button>
+                                        <Button isIconOnly={true}>
                                             <MdMoreVert size={20} />
                                         </Button>
                                     </DropdownTrigger>

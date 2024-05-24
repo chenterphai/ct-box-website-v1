@@ -57,7 +57,33 @@ const RecentProject = () => {
         autoplay: true,
         autoplaySpeed: 1,
         cssEase: 'linear',
-        rtl: true
+        rtl: true,
+        responsive: [
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1
+                }
+            }
+        ]
     };
     return (
         <div
