@@ -142,28 +142,32 @@ export const PROJECTS = [
         title: 'NYT Technology Website',
         subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur beatae quod animi odit eaque voluptatem id iste assumenda, quia eum.',
         thumbnail: thumbnail,
-        tag: 'Web Development'
+        tag: 'Web Development',
+        logo: 'https://nyt-website-v1.vercel.app/_next/image?url=https%3A%2F%2Fgcxsvuwjngrpqmekwgzc.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Ffiles%2Fimages%2FNYT_Logo_v1_transparent.png&w=640&q=75'
     },
     {
         id: 2,
         title: 'NYT Technology Website',
         subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur beatae quod animi odit eaque voluptatem id iste assumenda, quia eum.',
         thumbnail: thumbnail,
-        tag: 'Mobile Application'
+        tag: 'Mobile Application',
+        logo: 'https://nyt-website-v1.vercel.app/_next/image?url=https%3A%2F%2Fgcxsvuwjngrpqmekwgzc.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Ffiles%2Fimages%2FNYT_Logo_v1_transparent.png&w=640&q=75'
     },
     {
         id: 3,
         title: 'NYT Technology Website',
         subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur beatae quod animi odit eaque voluptatem id iste assumenda, quia eum.',
         thumbnail: thumbnail,
-        tag: 'Web Design'
+        tag: 'Web Design',
+        logo: 'https://nyt-website-v1.vercel.app/_next/image?url=https%3A%2F%2Fgcxsvuwjngrpqmekwgzc.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Ffiles%2Fimages%2FNYT_Logo_v1_transparent.png&w=640&q=75'
     },
     {
         id: 4,
         title: 'NYT Technology Website',
         subtitle: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur beatae quod animi odit eaque voluptatem id iste assumenda, quia eum.',
         thumbnail: thumbnail,
-        tag: 'Web Development'
+        tag: 'Web Development',
+        logo: 'https://nyt-website-v1.vercel.app/_next/image?url=https%3A%2F%2Fgcxsvuwjngrpqmekwgzc.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Ffiles%2Fimages%2FNYT_Logo_v1_transparent.png&w=640&q=75'
     },
 
 ]

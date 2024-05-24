@@ -64,28 +64,29 @@ const PhoneTabBar = () => {
 
                                     <DropdownMenu aria-label="Dropdown menu with icons">
                                         <DropdownItem
-                                            key="new"
-
+                                            key="about"
+                                            onClick={() => router.push('/about')}
                                             startContent={<IoMdInformationCircleOutline />}
                                         >
                                             About
                                         </DropdownItem>
                                         <DropdownItem
-                                            key="copy"
-
+                                            key="apps"
+                                            onClick={() => router.push('/applications')}
                                             startContent={<IoIosPhonePortrait />}
                                         >
                                             Apps
                                         </DropdownItem>
                                         <DropdownItem
-                                            key="edit"
-
+                                            key="our-member"
+                                            onClick={() => router.push('/our-member')}
                                             startContent={<AiOutlineTeam />}
                                         >
                                             Our member
                                         </DropdownItem>
                                         <DropdownItem
-                                            key="delete"
+                                            key="our-team"
+                                            onClick={() => router.push('/our-team')}
                                             startContent={<RiTeamLine />}
                                         >
                                             Our team

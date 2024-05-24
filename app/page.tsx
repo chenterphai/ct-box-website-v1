@@ -2,6 +2,7 @@
 import HeroSection from "@/components/Hero";
 import MemberSection from "@/components/MemberSection";
 import OurTeamSection from "@/components/OurTeam";
+import RecentProject from "@/components/RecentProject";
 import ServiceComponent from "@/components/Service";
 import SummaryResultSection from "@/components/SummaryResult";
 import { ThemeSwitcher } from "@/components/ThemeSwitcher";
@@ -19,6 +20,7 @@ export default function Home() {
         <SummaryResultSection />
         <ServiceComponent />
         <OurTeamSection />
+        <RecentProject />
         <MemberSection />
       </main>
     </>

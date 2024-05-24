@@ -43,7 +43,7 @@ export default function MemberSection() {
         arrows: false,
         speed: 5000,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 1,
         slidesToShow: 4,
         slidesToScroll: 1,
         cssEase: 'linear',
