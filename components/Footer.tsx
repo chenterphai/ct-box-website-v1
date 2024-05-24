@@ -70,6 +70,7 @@ export default function FooterSection({ isVisible }: any) {
                         <div className='flex flex-col space-y-2'>
                             {route?.map((item) => (
                                 <Link
+                                    key={item.id}
                                     href={item.href}
                                     className='text-sm flex items-center space-x-3 text-default-500 transition-all duration-250 ease-linear hover:text-primary hover:pl-3'
                                 >
