@@ -52,7 +52,7 @@ export default function OurMember() {
                 <div className='grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-10'>
                     {MEMBERS_DATA && MEMBERS_DATA?.map((item) => (
 
-                        <MEMBER_CARD data={item} />
+                        <MEMBER_CARD data={item} key={item.id} />
 
                     ))}
                 </div>
